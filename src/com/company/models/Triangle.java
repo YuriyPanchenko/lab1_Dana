@@ -1,10 +1,11 @@
 package com.company.models;
 
+import com.company.interfaces.TriangleInterface;
 import com.company.service.TriangleService;
 
 import java.util.ArrayList;
 
-public class Triangle {
+public class Triangle implements TriangleInterface {
     private Top A;
     private Top B;
     private Top C;

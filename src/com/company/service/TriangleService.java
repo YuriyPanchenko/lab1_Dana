@@ -1,11 +1,12 @@
 package com.company.service;
 
+import com.company.interfaces.TriangleServiceInterface;
 import com.company.models.Triangle;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class TriangleService {
+public class TriangleService implements TriangleServiceInterface {
     //calculate sides for necessary triangle
     public static ArrayList<Double> calculateSides(Triangle triangle){
         double a = Math.sqrt(Math.pow(triangle.getA().getxCoordinate() - triangle.getB().getxCoordinate(), 2) + Math.pow(triangle.getA().getyCoordinate() - triangle.getB().getyCoordinate(), 2));
